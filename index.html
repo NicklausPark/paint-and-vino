@@ -84,22 +84,27 @@
             <form id="paypalButton" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="">
               <input type="hidden" name="cmd" value="_xclick">
               <input type="hidden" name="business" value="2767QPMH7QGWJ">
-              <p class="payment-text">Red or white wine for you?  
-              <select name="item_name">
-                <option value="White Wine"><p>White</p></option>
-                <option value="Red Wine"><p>Red</p></option>
-              </select></p>
+              <p class="payment-text">Red or white wine for you?
+                <select name="item_name">
+                  <option value="White Wine">
+                    <p>White</p>
+                  </option>
+                  <option value="Red Wine">
+                    <p>Red</p>
+                  </option>
+                </select></p>
 
               <!-- <p class="payment-text">Which workshop date?
               <select name="item_number">
                 <option value="April 13">April 13</option>
               
                -->
-                <!-- <option value="Amazon S3 Tutorial">The Amazon S3 Tutorial</option>
-              <option value="Some Other Tutorial">Some Other Tutorial</option> --></p>
+              <!-- <option value="Amazon S3 Tutorial">The Amazon S3 Tutorial</option>
+              <option value="Some Other Tutorial">Some Other Tutorial</option> -->
+              </p>
               <!-- </select> -->
               <p class="payment-text">How many spots?
-              <input type="number" name="quantity" value="1" min="1" max="12"></p>
+                <input type="number" name="quantity" value="1" min="1" max="12"></p>
               <input type="hidden" name="lc" value="US">
               <input type="hidden" name="item_name" value="Paint & Vino Reservation">
               <input type="hidden" name="amount" value="600.00">
@@ -124,7 +129,7 @@
             <p class="card-text"><i class="fas fa-wine-glass-alt"></i> 10:30am - 12:30am</p>
           </div>
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -151,12 +156,6 @@
           <h3 class="feature-title">Gift Cards Available</h3>
           <p class="feature-text"></p>
         </div>
-
-        <!-- <div class="feature-box">
-          <img class="feature-icons" src="images/icons/wine-bottle.svg">
-          <h3 class="feature-title">Beginner Friendly</h3>
-          <p class="feature-text">Step by step breakdown</p>
-        </div> -->
 
 
         <div class="feature-box col-lg-3 col-md-6">
@@ -231,29 +230,57 @@
   <section class="orange-section" id="mission">
     <div class="container-fluid">
       <h1>What Our Painters Say</h1>
-      <p>As someone who is completely non-artistic, I have to say that Alysa did an amazing job helping me create a
-        lovely painting! She was so patient with our group and we had a blast. The 2 hours went by in a flash but we all
-        ended up with finished products. I highly recommend a paint & vino night - it was such a unique and creative way
-        to be social! – B. Butzer
-      </p>
 
-      <p>What a fantastic evening out with the girls. We couldn't believe Alysa could teach us to paint something we
-        would actually hang on our walls in just 2 hours! We've already started recommending this event to everyone.
-        Perfect for team building or practicing your English language skills - A+ – M. LeBlanc
-      </p>
-
-      <p>Please try these workshops to reveal your inner artist and if you think you don't have any - you're wrong! ;)
-        Everything is about good teacher and good atmosphere - you will have both here. Nice music, good wine and
-        probably the best teacher you can find in Prague! – E. Cherepanova</p>
-
-      <p>The workshop with Alysa was brilliant, she is very warm and patient and we had a really good time learning
-        something new! I recommend to give it a try! – L. De Dios</p>
-
-      <p>
-        Alysa prepared a perfect private painting session for us with some delicious wine in a stellar location. She was
-        helpful and excited to see what we made. It was an all around 10/10 afternoon experience. I would highly
-        recommend. – S. Olds
-      </p>
+      <div id="carouselTestimonialSlide" class="carousel slide" data-ride="carousel" data-interval="15000" data-pause="hover|false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="testimonial-text">"As someone who is completely non-artistic, I have to say that Alysa did an amazing job helping me create
+              a
+              lovely painting! She was so patient with our group and we had a blast. The 2 hours went by in a flash but
+              we all
+              ended up with finished products. I highly recommend a paint & vino night - it was such a unique and
+              creative way to be social!"
+            </h2>
+            <img class="testimonial-icons" src="images/icons/user-16.svg">
+            <h2 class="testimonial-text">– <em>B. Butzer</em></h2>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">"What a fantastic evening out with the girls. We couldn't believe Alysa could teach us to paint something
+              we
+              would actually hang on our walls in just 2 hours! We've already started recommending this event to
+              everyone.
+              Perfect for team building or practicing your English language skills - A+"
+            </h2>
+            <img class="testimonial-icons" src="images/icons/user-7.svg">
+            <h2 class="testimonial-text">– <em>M. LeBlanc</em></h2>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">"Please try these workshops to reveal your inner artist and if you think you don't have any - you're
+              wrong! ;)
+              Everything is about good teacher and good atmosphere - you will have both here. Nice music, good wine and
+              probably the best teacher you can find in Prague!"</h2>
+              <img class="testimonial-icons" src="images/icons/user-6.svg">
+              <h2 class="testimonial-text">– <em>E. Cherepanova</em></h2>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">"The workshop with Alysa was brilliant, she is very warm and patient and we had a really good time
+              learning
+              something new! I recommend to give it a try!"</h2>
+              <img class="testimonial-icons" src="images/icons/user-19.svg">
+              <h2 class="testimonial-text">– <em>L. De Dios</em></h2>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">
+              "Alysa prepared a perfect private painting session for us with some delicious wine in a stellar location.
+              She was
+              helpful and excited to see what we made. It was an all around 10/10 afternoon experience. I would highly
+              recommend."
+            </h2>
+            <img class="testimonial-icons" src="images/icons/user-15.svg">
+            <h2 class="testimonial-text">– <em>S. Olds</em></h2>
+          </div>
+        </div>
+      </div>
     </div>
 
 
@@ -299,23 +326,25 @@
 
         <div class="col-lg-6">
           <form action="https://formspree.io/alyyamada@gmail.com" method="POST" />
-            <div class="form-group">
-              <h1>Message Me</h1>
-              <input type="text" name="_replyto" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <div class="form-group">
+            <h1>Message Me</h1>
+            <input type="text" name="_replyto" class="form-control" id="exampleFormControlInput1"
+              placeholder="name@example.com">
+          </div>
+          <div class="form-group form-row">
+            <div class="col">
+              <input type="text" name="firstname" class="form-control" placeholder="Your Name">
             </div>
-            <div class="form-group form-row">
-              <div class="col">
-                <input type="text" name="firstname" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="col">
-                <input type="text" name="lastname" class="form-control" placeholder="Last name">
-              </div>
+            <div class="col">
+              <input type="text" name="lastname" class="form-control" placeholder="Last name">
             </div>
-            <div class="form-group">
-              <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-            </div>
-            <input type="submit" class="btn btn-lg btn-dark" value="Send">
-            <input type="hidden" name="_subject" value="Message From paint-and-vino" />
+          </div>
+          <div class="form-group">
+            <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1"
+              rows="10"></textarea>
+          </div>
+          <input type="submit" class="btn btn-lg btn-dark" value="Send">
+          <input type="hidden" name="_subject" value="Message From paint-and-vino" />
           </form>
         </div>
       </div>
