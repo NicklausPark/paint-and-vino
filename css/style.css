@@ -67,8 +67,8 @@ p {
 
 /* Testimonial Section */
 .testimonial-text {
-  padding: 4%;
-  
+  padding: 1%;
+  font-size: 1.5rem;
 }
 
 .testimonial-icons {
@@ -132,7 +132,7 @@ p {
 
 
 .feature-icons {
-  width: 200px;
+  width: 160px;
   height: auto;
   
 }
