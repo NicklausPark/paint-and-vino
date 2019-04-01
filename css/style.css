@@ -3,11 +3,14 @@ body {
   text-align: center;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Roboto Condensed', sans-serif
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,14 +20,17 @@ hr {
   width: 75%;
   margin: 15px auto;
 }
-
+.payment-text {
+  line-height: 0.3rem;
+  text-align: left;
+}
 p {
   text-align: center;
   font-size: 1.3rem;
 }
 
 .container-fluid {
-  padding: 7% 15%;
+  padding: 7% 10%;
 }
 
 .colored-section {
@@ -40,11 +46,22 @@ p {
 }
 
 .container {
-  width: 50%;
+  width: 100%;
 }
 
 .black-section {
   background-color: black;
+}
+
+.gallery-img {
+  width: 33%;
+}
+.btn-dark {
+  background-color: #f8b739;
+  color: black;
+  display: inline;
+  align: middle;
+  margin-right: 3%;
 }
 
 /* Location Section */
@@ -70,40 +87,45 @@ p {
   padding: 3%;
 }
 
-.gallery-img {
-  padding: 1%;
-  width: 100%;
-  height: auto;
+.card-title {
+  text-align: center;
 }
+
 /* Features Section  */
 #features {
   position: relative;
 }
 
+#paypalButtonContainer {
+  padding-left: 3%;
+}
 #features .container-fluid {
-  padding: 2% 15%;
+  padding: 2% 3%;
 }
 
 
 .feature-box {
-  padding: 4%;
+  padding: 3%;
+  
 }
 
 .feature-title {
-  font-size: 1.5rem;
+  padding-top: 7%;
 }
 
 .feature-text {
-  font-size: 1rem;
-  padding-top: 3%;
-  line-height: 7%;
+  
 }
 
+
 .feature-icons {
-  padding: 4%;
-  width: 100%;
-  margin-right: 15%;
-  margin-bottom: 7%;
+  width: 250px;
+  height: auto;
+  
+}
+
+.feature-icon-gift {
+  
 }
 
 /* Navbar Section */
@@ -164,9 +186,13 @@ p {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+.header-btn {
+  display: inline;
+}
 
 .heading-container {
   padding-right: 7%;
+  text-align: left;
 }
 
 .big-heading {
@@ -175,11 +201,13 @@ p {
   text-align: justify;
   margin: auto auto;
 }
+
 .card {
   width: 18rem;
   margin-left: 15px;
   display: inline-block;
 }
+
 .heading-text {
   text-align: left;
   line-height: 2.3rem;
@@ -211,7 +239,7 @@ p {
   font-size: 1.2rem;
   font-family: 'Roboto Condensed', sans-serif;
   /* font-weight: ; */
-  margin-left: 0;
+  margin: auto;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -222,52 +250,28 @@ p {
 .carousel-control-next-icon {
   height: 100px;
   width: 100px;
-  outline: black;
+  outline: #f8b739;
   background-size: 100%, 100%;
   background-image: none
 }
 
 .carousel-indicators .active {
-  background-color: #f8b739;
+  background-color: black;
 }
 
 .carousel-control-next-icon:after {
   content: '>';
   font-size: 55px;
-  color: black;
+  color: #f8b739;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 55px;
-  color: black;
+  color: #f8b739;
 }
 
-input,
-.StripeElement {
-  height: 40px;
-  color: #32325d;
-  background-color: white;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px 0 #e6ebf1;
-  -webkit-transition: box-shadow 150ms ease;
-  transition: box-shadow 150ms ease;
-}
-
-input {
-  padding: 10px 12px;
-}
-
-input:focus,
-.StripeElement--focus {
-  box-shadow: 0 1px 3px 0 #cfd7df;
-}
-
-.StripeElement--invalid {
-  border-color: #fa755a;
-}
-
-.StripeElement--webkit-autofill {
-  background-color: #fefde5 !important;
+.carousel-indicators li {
+  background-color: #999 !important;
+  background-color: #f8b739 !important;
 }

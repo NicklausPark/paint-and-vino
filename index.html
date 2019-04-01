@@ -5,11 +5,13 @@
   <meta charset="utf-8">
   <title>Paint & Vino in Prague</title>
   <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/stripe.css" data-rel-css="" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/stripe.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto+Condensed:400,700" rel="stylesheet">
 </head>
 
@@ -20,7 +22,7 @@
       <!-- Nav Bar -->
       <nav class="white-section navbar navbar-expand-lg navbar-light">
 
-        <img class="pv-logo mx-auto" src="images/web-banner-07.png" alt="">
+        <img class="pv-logo mx-auto" src="images/web-banner-07.png" alt="" style="width: 70%">
 
         <!-- </nav>
       <nav class="navbar navbar-expand-lg navbar-light"> -->
@@ -29,13 +31,15 @@
           <span class="navbar-toggler-icon"></span>
         </button> -->
 
-        <div class="navbar-section" id="paint-vino">
-          <ul class="navbar-nav mx-auto">
+        <div class="navbar-section ml-auto mx-auto" id="paint-vino">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#reserve">Book</a>
+              <a class="nav-link" href="https://www.facebook.com/PaintVino"><i
+                  class="fab fa-facebook-square fa-2x"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#mission">Mission</a>
+              <a class="nav-link" href="https://www.instagram.com/paintandvino.prague/"><i
+                  class="fab fa-instagram fa-2x"></i></a>
             <li class="nav-item">
               <a class="nav-link" href="#location">Location</a>
             </li>
@@ -46,7 +50,7 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <!-- <a href="https://www.facebook.com/PaintVino" class="ml-auto"><i class="social-icon fab fa-facebook-f fa-2x"></i></a> -->
+
             </li>
           </ul>
         </div>
@@ -70,102 +74,195 @@
           <h1 class="big-heading">Painting Workshops in Prague</h1>
           <p class="heading-text">
 
-            It’s time to learn the basics of painting while sipping on some wine in the magical city of Prague. Our practical step-by-step workshops will encourage you to create your own artwork to take home in just a few hours. Not an artist? No problem. We have practice rounds to get you comfortable before diving into the real thing.</p>
-          <p class="heading-text">A warm experience worth sharing with friends, colleagues and even alone to let your inner artist shine. All materials and superhero capes are provided.</p>
-          <a href="#reserve" class="header-button btn btn-lg btn-dark">Book Your Seat</a>
-          <a href="#contact" class="header-button btn btn-lg btn-dark">Request Private Event</a>
-          <!-- <img src="images/homepage.jpg.png" class="title-image" alt="..."> -->
+            It’s time to learn the basics of painting while sipping on some wine in the magical city of Prague. Our
+            practical step-by-step workshops will encourage you to create your own artwork to take home in just a few
+            hours. Not an artist? No problem. We have practice rounds to get you comfortable before diving into the real
+            thing.</p>
+          <p class="heading-text">A warm experience worth sharing with friends, colleagues and even alone to let your
+            inner artist shine. All materials and superhero capes are provided.</p>
+          <div id="paypalButtonContainer">
+            <form id="paypalButton" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="">
+              <input type="hidden" name="cmd" value="_xclick">
+              <input type="hidden" name="business" value="2767QPMH7QGWJ">
+              <p class="payment-text">Red or white wine for you?  
+              <select name="item_name">
+                <option value="White Wine"><p>White</p></option>
+                <option value="Red Wine"><p>Red</p></option>
+              </select></p>
+
+              <!-- <p class="payment-text">Which workshop date?
+              <select name="item_number">
+                <option value="April 13">April 13</option>
+              
+               -->
+                <!-- <option value="Amazon S3 Tutorial">The Amazon S3 Tutorial</option>
+              <option value="Some Other Tutorial">Some Other Tutorial</option> --></p>
+              <!-- </select> -->
+              <p class="payment-text">How many spots?
+              <input type="number" name="quantity" value="1" min="1" max="12"></p>
+              <input type="hidden" name="lc" value="US">
+              <input type="hidden" name="item_name" value="Paint & Vino Reservation">
+              <input type="hidden" name="amount" value="600.00">
+              <input type="hidden" name="currency_code" value="CZK">
+              <input type="hidden" name="button_subtype" value="services">
+              <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest"><br>
+              <div class="container-fluid">
+                <input type="submit" class="header-btn btn btn-lg btn-dark" role="button" value="Book Now">
+
+                <a href="#contact" class="header-button btn btn-lg btn-dark">Request Private Event</a>
+              </div>
+            </form>
+
+          </div>
         </div>
         <!-- Event Card -->
-          <div class="card mx-auto col-lg-2 col-sm-12" style="width: 18rem; margin-right: 25%;">
-            <div class="card-body">
-              <h5 class="card-title">Upcoming Group Events</h5>
-              <img src="images/55.jpg" class="card-img-top" alt="..." >
-              <p class="card-text">March 30th</p>
-              <p class="card-text">11am - 1am</p>
-              <a href="#reserve" class="btn btn-dark">Book It</a>
-            </div>
+        <div class="card mx-auto col-lg-3 col-sm-4" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Upcoming Group Events</h5>
+            <img src="images/events/25.jpg" class="card-img-top">
+            <p class="card-text">April 13th</p>
+            <p class="card-text"><i class="fas fa-wine-glass-alt"></i> 10:30am - 12:30am</p>
           </div>
-          <div class="card mx-auto col-lg-2 col-sm-12">
-            <div class="card-body">
-              <h5 class="card-title">Upcoming Group Events</h5>
-              <img src="images/55.jpg" class="card-img-top" alt="...">
-              <p class="card-text">March 30th</p>
-              <p class="card-text">11am - 1am</p>
-              <a href="#reserve" class="btn btn-dark">Book It</a>
-            </div>
-          </div>
+        </div>
+        
       </div>
     </div>
   </section>
 
   <!-- Features Section -->
   <section class="colored-section" id="features">
-
     <div class="container-fluid">
+      <div class="feature-row row">
 
-      <div class="row">
-
-        <div class="feature-box col-lg-3 col-sm-6">
+        <div class="feature-box col-lg-3 col-md-6">
           <img class="feature-icons" src="images/icons/brush.svg">
           <h3 class="feature-title">Team Building</h3>
           <p class="feature-text">At your workplace or ours?</p>
         </div>
 
-        <div class="feature-box col-lg-3 col-sm-6">
+        <div class="feature-box col-lg-3 col-md-6">
           <img class="feature-icons" src="images/icons/clipboard.svg">
           <h3 class="feature-title">Private Events</h3>
-          <p class="feature-text">Birthday parties, friend groups</p>
-          <p class="feature-text">(min 4 people)</p>
+          <p class="feature-text">Birthdays, groups, min 4 ppl</p>
         </div>
 
-        <div class="feature-box col-lg-3 col-sm-6">
-          <img class="feature-icons" src="images/icons/teamwork.svg">
+        <div class="feature-box col-lg-3 col-md-6">
+          <img class="feature-icons" src="images/icons/gift.svg">
           <h3 class="feature-title">Gift Cards Available</h3>
           <p class="feature-text"></p>
         </div>
 
-        <div class="feature-box col-lg-3 col-sm-6">
+        <!-- <div class="feature-box">
           <img class="feature-icons" src="images/icons/wine-bottle.svg">
           <h3 class="feature-title">Beginner Friendly</h3>
           <p class="feature-text">Step by step breakdown</p>
+        </div> -->
+
+
+        <div class="feature-box col-lg-3 col-md-6">
+          <img class="feature-icons" src="images/icons/credit-card.svg">
+          <h3 class="feature-title">Payment</h3>
+          <p class="feature-text">600 CZK - Everything Included</p>
         </div>
       </div>
 
+
+
+
     </div>
+
   </section>
+
   <section class="colored-section" id="gallery">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="gallery-img" src="images/00.jpg">
-        </div>
-        <div class="col-lg-4">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade container-fluid" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="gallery-img" src="images/00.jpg" alt="First slide">
           <img class="gallery-img" src="images/001.jpg">
-        </div>
-        <div class="col-lg-4">
           <img class="gallery-img" src="images/1.jpg">
-        </div>
-        <div class="col-lg-4">
           <img class="gallery-img" src="images/2.jpg">
-        </div>
-        <div class="col-lg-4">
           <img class="gallery-img" src="images/3.jpg">
-        </div>
-        <div class="col-lg-4">
           <img class="gallery-img" src="images/4.jpg">
         </div>
+        <div class="carousel-item">
+          <img class="gallery-img" src="images/5.jpg">
+          <img class="gallery-img" src="images/6.jpg">
+          <img class="gallery-img" src="images/7.jpg">
+          <img class="gallery-img" src="images/8.jpg">
+          <img class="gallery-img" src="images/9.jpg">
+          <img class="gallery-img" src="images/10.jpg">
+
+        </div>
+        <div class="carousel-item">
+          <img class="gallery-img" src="images/11.jpg">
+          <img class="gallery-img" src="images/12.jpg">
+          <img class="gallery-img" src="images/13.jpg">
+          <img class="gallery-img" src="images/14.jpg">
+          <img class="gallery-img" src="images/15.jpg">
+          <img class="gallery-img" src="images/16.jpg">
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
     </div>
+
+
+
+
+
+
+
 
   </section>
   <!-- Testimonial Section -->
   <section class="orange-section" id="mission">
     <div class="container-fluid">
-      <h1>What They Say</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1>What Our Painters Say</h1>
+      <p>As someone who is completely non-artistic, I have to say that Alysa did an amazing job helping me create a
+        lovely painting! She was so patient with our group and we had a blast. The 2 hours went by in a flash but we all
+        ended up with finished products. I highly recommend a paint & vino night - it was such a unique and creative way
+        to be social! – B. Butzer
+      </p>
+
+      <p>What a fantastic evening out with the girls. We couldn't believe Alysa could teach us to paint something we
+        would actually hang on our walls in just 2 hours! We've already started recommending this event to everyone.
+        Perfect for team building or practicing your English language skills - A+ – M. LeBlanc
+      </p>
+
+      <p>Please try these workshops to reveal your inner artist and if you think you don't have any - you're wrong! ;)
+        Everything is about good teacher and good atmosphere - you will have both here. Nice music, good wine and
+        probably the best teacher you can find in Prague! – E. Cherepanova</p>
+
+      <p>The workshop with Alysa was brilliant, she is very warm and patient and we had a really good time learning
+        something new! I recommend to give it a try! – L. De Dios</p>
+
+      <p>
+        Alysa prepared a perfect private painting session for us with some delicious wine in a stellar location. She was
+        helpful and excited to see what we made. It was an all around 10/10 afternoon experience. I would highly
+        recommend. – S. Olds
+      </p>
     </div>
+
+
+
   </section>
+
+
+
+
   <!-- Location Section -->
   <section class="colored-section " id="location">
 
@@ -178,7 +275,7 @@
           one min from both Krizikova metro and tram stop.</p>
       </div>
       <div class="location-box col-lg-4">
-          <img src="images/strv1.jpg" class="strv-img" style="width: 100%; height: auto">
+        <img src="images/strv1.jpg" class="strv-img" style="width: 100%; height: auto">
       </div>
       <div class="location-box col-lg-4">
         <img src="images/strv2.jpg" class="strv-img" style="width: 100%; height: auto">
@@ -201,23 +298,24 @@
         </div>
 
         <div class="col-lg-6">
-          <form onsubmit=mailto:"alyyamada@gmail.com" method="post">
+          <form action="https://formspree.io/alyyamada@gmail.com" method="POST" />
             <div class="form-group">
               <h1>Message Me</h1>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <input type="text" name="_replyto" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="form-group form-row">
               <div class="col">
-                <input type="text" class="form-control" placeholder="First name">
+                <input type="text" name="firstname" class="form-control" placeholder="Your Name">
               </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="Last name">
+                <input type="text" name="lastname" class="form-control" placeholder="Last name">
               </div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+              <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
             </div>
-            <button class="btn btn-lg btn-dark">Go!</button>
+            <input type="submit" class="btn btn-lg btn-dark" value="Send">
+            <input type="hidden" name="_subject" value="Message From paint-and-vino" />
           </form>
         </div>
       </div>
@@ -256,40 +354,38 @@
         </form> -->
 
 
-<section id="reserve">
+  <!-- <section id="reserve">
     <div class="container-fluid">
       <div>
         <form action="https://ijr6umfjk2.execute-api.eu-central-1.amazonaws.com/dev/charges" method="POST">
-          <script
-            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="pk_test_2m2Cc32Mv12SIggwqTD7Z5Gi"
-            data-amount="60000"
-            data-currency="czk"
-            data-name="Medium"
-            data-description="Widget"
-            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_2m2Cc32Mv12SIggwqTD7Z5Gi" data-amount="60000" data-currency="czk" data-name="Medium"
+            data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
             data-locale="auto">
           </script>
         </form>
-      </div> 
+      </div>
 
-      
+
 
 
     </div>
-  </section>
+  </section> -->
 
   <footer class="colored-section" id="footer">
     <div class="container-fluid">
       <p>© Copyright 2019 Paint & Vino</p>
     </div>
   </footer>
-  <script type="text/javascript" src="/javascripts/jquery-3.1.1.min.js"></script>
-  <script src="https://js.stripe.com/v3/"></script>
-  <script src="stripe-elements.js" defer></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
 
 
 </body>
