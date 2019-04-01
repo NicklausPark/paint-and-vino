@@ -56,6 +56,7 @@ p {
 .gallery-img {
   width: 33%;
 }
+
 .btn-dark {
   background-color: #f8b739;
   color: black;
@@ -64,6 +65,15 @@ p {
   margin-right: 3%;
 }
 
+/* Testimonial Section */
+.testimonial-text {
+  padding: 4%;
+  
+}
+
+.testimonial-icons {
+  width: 10%;
+}
 /* Location Section */
 .h2-location {
   font-size: 3rem;
@@ -73,14 +83,15 @@ p {
   font-size: 1.2rem;
   line-height: 2rem;
   padding: 7%;
-  text-align: justify;
+  text-align: left;
 }
 
 .strv-img {
   display: inline-block;
   margin: auto;
-  width: auto;
+  width: 200px;
   height: auto;
+  
 }
 
 .location-box {
@@ -92,6 +103,7 @@ p {
 }
 
 /* Features Section  */
+
 #features {
   position: relative;
 }
@@ -99,6 +111,7 @@ p {
 #paypalButtonContainer {
   padding-left: 3%;
 }
+
 #features .container-fluid {
   padding: 2% 3%;
 }
@@ -119,7 +132,7 @@ p {
 
 
 .feature-icons {
-  width: 250px;
+  width: 200px;
   height: auto;
   
 }
