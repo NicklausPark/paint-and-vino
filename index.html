@@ -53,6 +53,32 @@
 
             </li>
           </ul>
+          <!-- <form id="paypalButton" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="2767QPMH7QGWJ">
+            <p class="payment-text">Red or white wine for you?
+              <select name="item_name">
+                <option value="White Wine">
+                  <p>White</p>
+                </option>
+                <option value="Red Wine">
+                  <p>Red</p>
+                </option>
+              </select>
+            <p class="payment-text">How many spots?
+              <input type="number" name="quantity" value="1" min="1" max="12" style="width: 3%;"></p>
+            <input type="hidden" name="lc" value="US">
+            <input type="hidden" name="item_name" value="Paint & Vino Reservation">
+            <input type="hidden" name="amount" value="600.00">
+            <input type="hidden" name="currency_code" value="CZK">
+            <input type="hidden" name="button_subtype" value="services">
+            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest"><br>
+            <div class="container-fluid">
+              <input type="submit" class="header-button btn btn-lg btn-dark" role="button" value="Book Now">
+
+              <a href="#contact" class="header-button btn btn-lg btn-dark">Request Private Event</a>
+            </div>
+          </form> -->
         </div>
       </nav>
     </div>
@@ -80,11 +106,11 @@
             thing.</p>
           <p class="heading-text">A warm experience worth sharing with friends, colleagues and even alone to let your
             inner artist shine. All materials and superhero capes are provided.</p>
-          <div id="paypalButtonContainer">
+          <div id="paypalButtonContainer" style="padding-left: 25%; padding-top: 3%;">
             <form id="paypalButton" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="">
               <input type="hidden" name="cmd" value="_xclick">
               <input type="hidden" name="business" value="2767QPMH7QGWJ">
-              <p class="payment-text">Red or white wine for you?
+              <p class="payment-text" style="">Red or white wine for you?
                 <select name="item_name">
                   <option value="White Wine">
                     <p>White</p>
@@ -92,29 +118,19 @@
                   <option value="Red Wine">
                     <p>Red</p>
                   </option>
-                </select></p>
-
-              <!-- <p class="payment-text">Which workshop date?
-              <select name="item_number">
-                <option value="April 13">April 13</option>
-              
-               -->
-              <!-- <option value="Amazon S3 Tutorial">The Amazon S3 Tutorial</option>
-              <option value="Some Other Tutorial">Some Other Tutorial</option> -->
-              </p>
-              <!-- </select> -->
-              <p class="payment-text">How many spots?
+                </select>
+              <p class="payment-text" style="">How many spots?
                 <input type="number" name="quantity" value="1" min="1" max="12"></p>
               <input type="hidden" name="lc" value="US">
               <input type="hidden" name="item_name" value="Paint & Vino Reservation">
-              <input type="hidden" name="amount" value="600.00">
+              <input type="hidden" name="amount" value="50.00">
               <input type="hidden" name="currency_code" value="CZK">
               <input type="hidden" name="button_subtype" value="services">
               <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest"><br>
-              <div class="container-fluid">
-                <input type="submit" class="header-btn btn btn-lg btn-dark" role="button" value="Book Now">
+              <div style="">
+                <input type="submit" class="btn btn-lg btn-dark" role="button" value="Book Now" style="display:inline-block; position: relative; font-size: 1.2rem">
 
-                <a href="#contact" class="header-button btn btn-lg btn-dark">Request Private Event</a>
+                <a href="#contact" class="btn btn-lg btn-dark mx-auto" style="padding: 1.2% 1%;">Request Private Event</a>
               </div>
             </form>
 
@@ -231,7 +247,7 @@
     <div class="container-fluid">
       <h1>What Our Painters Say</h1>
 
-      <div id="carouselTestimonialSlide" class="carousel slide" data-ride="carousel" data-interval="15000" data-pause="hover|false">
+      <div id="carouselTestimonialSlide" class="carousel slide" data-ride="carousel" data-interval="7000" data-pause="hover|false">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h2 class="testimonial-text">"As someone who is completely non-artistic, I have to say that Alysa did an amazing job helping me create
