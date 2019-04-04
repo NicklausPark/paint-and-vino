@@ -126,7 +126,7 @@
               <input type="hidden" name="amount" value="50.00">
               <input type="hidden" name="currency_code" value="CZK">
               <input type="hidden" name="button_subtype" value="services">
-              <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest"><br>
+              <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest"><>
               <div style="">
                 <input type="submit" class="btn btn-lg btn-dark" role="button" value="Book Now" style="display:inline-block; position: relative; font-size: 1.2rem">
 
@@ -141,7 +141,7 @@
           <div class="card-body">
             <h5 class="card-title">Upcoming Group Events</h5>
             <img src="images/events/25.jpg" class="card-img-top">
-            <p class="card-text">April 13th</p>
+            <p class="card-text">April 20th</p>
             <p class="card-text"><i class="fas fa-wine-glass-alt"></i> 10:30am - 12:30am</p>
           </div>
         </div>
@@ -244,10 +244,17 @@
   </section>
   <!-- Testimonial Section -->
   <section class="orange-section" id="mission">
-    <div class="container-fluid">
-      <h1>What Our Painters Say</h1>
 
-      <div id="carouselTestimonialSlide" class="carousel slide" data-ride="carousel" data-interval="7000" data-pause="hover|false">
+      <div id="carouselTestimonialSlide" class="carousel slide carousel-fade container-fluid" data-ride="carousel" data-interval="7000" data-pause="hover|false">
+          <h1>What Our Painters Say</h1>
+        <ol class="test-indicators carousel-indicators">
+          <li data-target="#carouselTestimonialSlide" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselTestimonialSlide" data-slide-to="1"></li>
+          <li data-target="#carouselTestimonialSlide" data-slide-to="2"></li>
+          <li data-target="#carouselTestimonialSlide" data-slide-to="3"></li>
+          <li data-target="#carouselTestimonialSlide" data-slide-to="4"></li>
+         
+        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h2 class="testimonial-text">"As someone who is completely non-artistic, I have to say that Alysa did an amazing job helping me create
@@ -297,7 +304,7 @@
           </div>
         </div>
       </div>
-    </div>
+
 
 
 
@@ -310,18 +317,19 @@
   <section class="colored-section " id="location">
 
     <div class="row">
-      <div class="location-box col-lg-4">
+      <div class="location-box col-lg-7">
         <h2 class="h2-location">Location</h2>
         <hr class="contact-hr">
-        <p class="p-location">Art and painting workshops at the indoor / outdoor rooftop of STRV
-          at <strong>Rohanské nábř. 678/23, 186 00 Praha 8 - Karlín</strong>
-          one min from both Krizikova metro and tram stop.</p>
+        <p class="p-location">Address:<strong> Krizikova 150/43
+          Karlin, Praha 8 186 00</strong><br> Note: Workshops can also take place in local cafes or parks. <br>
+          Exact location will always be confirmed in your reservation email. 
+        </p>
       </div>
+      <!-- <div class="location-box col-lg-4">
+        <img src="images/location.jpg" class="strv-img" style="width: 100%; height: auto">
+      </div> -->
       <div class="location-box col-lg-4">
-        <img src="images/strv1.jpg" class="strv-img" style="width: 100%; height: auto">
-      </div>
-      <div class="location-box col-lg-4">
-        <img src="images/strv2.jpg" class="strv-img" style="width: 100%; height: auto">
+        <img src="images/location.jpg" class="strv-img" style="width: 100%; height: auto">
       </div>
     </div>
 
@@ -343,16 +351,16 @@
         <div class="col-lg-6">
           <form action="https://formspree.io/alyyamada@gmail.com" method="POST" />
           <div class="form-group">
-            <h1>Message Me</h1>
+            <h1>Say Hello!</h1>
             <input type="text" name="_replyto" class="form-control" id="exampleFormControlInput1"
-              placeholder="name@example.com">
+              placeholder="you@email.com">
           </div>
           <div class="form-group form-row">
             <div class="col">
-              <input type="text" name="firstname" class="form-control" placeholder="Your Name">
+              <input type="text" name="firstname" class="form-control" placeholder="First Name">
             </div>
             <div class="col">
-              <input type="text" name="lastname" class="form-control" placeholder="Last name">
+              <input type="text" name="lastname" class="form-control" placeholder="Last Name">
             </div>
           </div>
           <div class="form-group">
